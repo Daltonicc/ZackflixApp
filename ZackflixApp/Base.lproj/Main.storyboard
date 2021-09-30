@@ -38,82 +38,86 @@
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Jf6-GR-ix3">
-                                <rect key="frame" x="71.5" y="308" width="271" height="280"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="left" contentVerticalAlignment="center" on="YES" id="JtZ-D4-aXD">
+                                <rect key="frame" x="308" y="644" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="clickedSwitch:" destination="xSi-bZ-lyT" eventType="valueChanged" id="Vbh-2s-CpN"/>
+                                </connections>
+                            </switch>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="Jf6-GR-ix3">
+                                <rect key="frame" x="57" y="321" width="300" height="315"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일 주소 또는 전화번호" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9H7-Rj-CcN">
-                                        <rect key="frame" x="0.0" y="0.0" width="271" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="34"/>
                                         <color key="backgroundColor" systemColor="systemGray3Color"/>
                                         <color key="textColor" systemColor="systemGray6Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k40-o0-eWI">
-                                        <rect key="frame" x="0.0" y="48" width="271" height="34"/>
+                                        <rect key="frame" x="0.0" y="55" width="300" height="34"/>
                                         <color key="backgroundColor" systemColor="systemGray3Color"/>
                                         <color key="textColor" systemColor="systemGray6Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="닉네임" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tfG-P1-8lC">
-                                        <rect key="frame" x="0.0" y="96" width="271" height="34"/>
+                                        <rect key="frame" x="0.0" y="110" width="300" height="34"/>
                                         <color key="backgroundColor" systemColor="systemGray3Color"/>
                                         <color key="textColor" systemColor="systemGray6Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="위치" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ig-5j-npI">
-                                        <rect key="frame" x="0.0" y="144" width="271" height="34"/>
+                                        <rect key="frame" x="0.0" y="165" width="300" height="34"/>
                                         <color key="backgroundColor" systemColor="systemGray3Color"/>
                                         <color key="textColor" systemColor="systemGray6Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="추천 코드 입력" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j3g-43-QCd">
-                                        <rect key="frame" x="0.0" y="192" width="271" height="34"/>
+                                        <rect key="frame" x="0.0" y="220" width="300" height="34"/>
                                         <color key="backgroundColor" systemColor="systemGray3Color"/>
                                         <color key="textColor" systemColor="systemGray6Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlw-WO-mox">
-                                        <rect key="frame" x="0.0" y="240" width="271" height="40"/>
+                                        <rect key="frame" x="0.0" y="275" width="300" height="40"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="8zP-mr-4WB"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Aal-py-IQi"/>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="p3H-iV-lXh"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="회원가입">
-                                            <color key="titleColor" systemColor="labelColor"/>
-                                        </state>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="D5I-fX-7bF"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="225" id="H4I-KD-Djx"/>
-                                    <constraint firstAttribute="width" constant="200" id="bCz-XL-kTQ"/>
-                                    <constraint firstAttribute="width" constant="271" id="ib9-3F-aDM"/>
+                                    <constraint firstAttribute="width" constant="300" id="ib9-3F-aDM"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="D5I-fX-7bF"/>
-                                        <exclude reference="H4I-KD-Djx"/>
-                                        <exclude reference="bCz-XL-kTQ"/>
-                                    </mask>
-                                </variation>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="추가 정보 입력" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7N-uk-Yxl">
+                                <rect key="frame" x="57" y="649" width="97" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Xan-Vp-hMe"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Jf6-GR-ix3" firstAttribute="centerY" secondItem="oaU-28-a6k" secondAttribute="centerY" id="c92-hk-JAX"/>
                             <constraint firstItem="Jf6-GR-ix3" firstAttribute="centerX" secondItem="oaU-28-a6k" secondAttribute="centerX" id="evM-HH-6ju"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ct0-9x-Oam" appends="YES" id="AIQ-ZX-eAb"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="emailText" destination="9H7-Rj-CcN" id="Kba-RP-zkc"/>
+                        <outlet property="jackflixSwitch" destination="JtZ-D4-aXD" id="v3Q-7d-95q"/>
                         <outlet property="nicknameText" destination="tfG-P1-8lC" id="gjw-mv-LGQ"/>
                         <outlet property="passwordText" destination="k40-o0-eWI" id="ChF-M0-OFU"/>
                         <outlet property="recommendText" destination="j3g-43-QCd" id="i1s-wZ-gps"/>
@@ -122,6 +126,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WRJ-jw-Ayh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ct0-9x-Oam">
+                    <connections>
+                        <action selector="downGesture:" destination="xSi-bZ-lyT" id="N6l-xl-6Xg"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="678.26086956521749" y="37.5"/>
         </scene>
