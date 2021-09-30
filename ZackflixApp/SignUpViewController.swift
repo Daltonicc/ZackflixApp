@@ -65,9 +65,18 @@ class SignUpViewController: UIViewController {
             recommendText.isHidden = true
         }
         
-        
     }
     
+    @IBAction func signUpClickedButton(_ sender: UIButton) {
+        print("회원가입 정보 확인")
+        print("ID: \(emailText.text!)")
+        print("PW: \(passwordText.text!)")
+        print("NICK: \(nicknameText.text!)")
+        print("LOCATION: \(whereText.text!)")
+        print("CODE: \(recommendText.text!)")
+        
+        
+    }
     
     
 }
